@@ -17,7 +17,7 @@ function bootstrap() {
     );
   } catch {
     // eslint-disable-next-line no-console
-    console.error("Failed to render the app");
+    console.error("Failed to render app");
   }
 }
 
