@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-ubuntu;
+}
+
+html,
+body,
+#root {
+  @apply w-full h-full overflow-hidden;
+}
+
+::-webkit-scrollbar {
+  @apply max-w-2 max-h-1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-900 rounded-lg;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
