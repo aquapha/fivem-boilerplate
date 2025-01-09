@@ -1,7 +1,12 @@
+local resourceName <const> = GetCurrentResourceName();
+
+---@type ClientUIEvents
+ClientUIEvents = exports["modules"]:ClientUIEvents(resourceName, SendNUIMessage)
+
 RegisterCommand("open-menu", function()
-  SendUIEvent("on-menu-open")
+  ClientUIEvents:SendEvent(Constants.UI.MENU_OPEN)
 end, false)
 
 RegisterCommand("close-menu", function()
-  SendUIEvent("on-menu-close")
+  ClientUIEvents:SendEvent(Constants.UI.MENU_CLOSE)
 end, false)

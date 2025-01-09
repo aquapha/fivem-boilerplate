@@ -1,0 +1,37 @@
+{
+  "name": "@dead-horizon/utilities-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "tsc": "tsc -b",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "build": "vite build",
+    "build:full": "tsc -b && vite build"
+  },
+  "dependencies": {
+    "@tanstack/react-query-devtools": "^5.63.0",
+    "@types/node": "^22.10.5",
+    "react": "catalog:latest",
+    "react-dom": "catalog:latest",
+    "tailwind-variants": "^0.3.0"
+  },
+  "devDependencies": {
+    "@dead-horizon/web-shared": "workspace:*",
+    "@dead-horizon/tailwind-config": "workspace:*",
+    "@dead-horizon/eslint-config": "workspace:*",
+    "@tanstack/react-query": "^5.63.0",
+    "@tanstack/react-router": "^1.95.1",
+    "@types/react": "^19.0.4",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "zod": "catalog:latest"
+  }
+}
